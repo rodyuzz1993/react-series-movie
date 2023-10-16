@@ -1,0 +1,513 @@
+body{margin:0px;padding:0px;color:white;background-color: rgb(7, 7, 99);
+  background-image: url('../src/assets/Wallpaper-Home.jpg');background-blend-mode: exclusion;}
+  @media only screen and (min-width:1200px)
+  {body{background-size: cover;}}
+  @media only screen and (max-width:1200px)
+  {body{background-size: auto;}}
+#LogoHome{
+  width: 70px;
+  filter: hue-rotate(160deg);
+}
+#NavDer {
+    display: flex;
+    gap: 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#NavHead {
+  background: #00000030;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  filter: opacity(0.5);
+  z-index: 10;
+  box-shadow: 0px 2px 11px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 2px 11px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 2px 11px 0px rgba(0,0,0,0.75);
+}
+@media only screen and (max-width:769px)
+{#NavHead{  filter: opacity(1)!important;}}
+@media only screen and (max-width:500px)
+{#NavHead {padding: 5px;display: block;}
+#NavDer {padding: 5px;flex-wrap: wrap;justify-content: center;}
+#NavIzq {justify-content: center;}
+}
+#NavHead:hover {
+  filter: opacity(1);
+  transition: 1s;
+  background-color: #1a2239;
+}
+#NavIzq {
+  display: flex;
+  align-items: center;
+}
+#NavHead span:hover
+{
+  filter: drop-shadow(2px 4px 6px black);
+  transform: scale(1.05);
+  transition: 0.1s;
+} 
+#NavHead img:hover
+{
+  transform: scale(1.1);
+  transition: 1s;
+} 
+#Footer {
+  padding: 20px 0px;
+  background: #1a2239;
+    width: 100%;
+}
+#LogoFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 25px;
+  font-weight: bold;
+  filter: drop-shadow(7px 5px 1px black);
+  flex-wrap: wrap;
+    gap: 30px;
+}
+#FooterBottom {
+  margin-top: 10px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 2px solid;
+}
+img#LogoHome {
+  filter: hue-rotate(160deg);
+  width: 100px;
+  animation-name: logo-home;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+@keyframes logo-home
+{
+ 0%{filter: hue-rotate(0deg);}
+ 100%{filter: hue-rotate(360deg);}
+}
+#HomeMovie {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  background: #00000070;
+    border-radius: 20px;
+    border: 2px solid #00000021;
+    box-shadow: 4px 4px 12px 3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 4px 4px 12px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 12px 3px rgba(0,0,0,0.75);
+}
+#HomeTxt {
+  display: flex;
+  flex-direction: column;
+}
+#HomeTxt h1{
+  text-align: center;
+  font-size: 80px;
+  margin: 50px;
+}
+@media only screen and (max-width:769px)
+{#HomeTxt h1{font-size: 50px;margin: 20px;}
+#HomeTxt h2{font-size: 28px;margin: 10px;}
+}
+#HomeTxt h2{
+  font-size: 40px;
+  margin: 10px;
+  text-align: center;
+}
+#HomeBuscador {
+  display: block;
+  text-align: center;
+  margin: 40px 0px;
+}
+#HomeBuscador input{
+  background:white;
+  height: 30px;
+  width: 250px;
+  color: black;
+  border: solid black 2px;
+  padding: 0px 10px;
+  font-size: 18px;
+}
+#BtnBuscar {
+  height: 34px;
+  border: 2px solid #1a2239;
+  background: #1a2239;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+}
+#CardMov {
+  background: #1a2239;
+  width: max-content;
+  padding: 15px;
+  text-align: center;
+  border-radius: 15px;
+  border: groove 5px #ffffff9e;
+  padding-top: 20px;
+}
+#TxtMovie {
+  background: black;
+  border-radius: 12px;
+  width: 204px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#TitleMovie {
+  margin: 5px;
+  padding-top: 10px;
+  color: #30b590;
+  font-weight: 900;
+  font-size: 18px;
+}
+#FechaMovie {
+  color: #30b590;
+  font-weight: 600;
+  font-size: 15px;
+  margin: 0px;
+  padding-bottom:5px
+}
+#CalifMovie {
+  letter-spacing: 5px;
+  margin: 0px;
+  padding: 5px;
+  color: gold;
+}
+#PortadaMovie {
+  display: flex;
+  justify-content: center;
+}
+#ImgPortada {
+  height: 300px;
+  transition: 1s;
+  width: 200px;
+  border-radius: 12px;
+  border: 2px solid white;
+  filter: drop-shadow(0px 0px 3px white) saturate(0.4);
+  position: relative;
+  top: -30px;
+}
+#ImgPortada:hover {
+  transition: 1s;
+  transform: scale(1.15) translateY(10px);
+  border-radius: 10px;
+  border: 2px solid white;
+  filter: drop-shadow(0px 0px 20px rgb(0, 0, 0)) saturate(1);
+  z-index: 10;
+}
+#AllMovies {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+  background: #00000070;
+  border-radius: 20px;
+  padding: 50px;
+  justify-content: center;
+  gap: 30px;
+}
+#TypeMovie {
+  padding: 5px;
+    margin: 5px;
+    border: 2px white groove;
+    z-index: 5;
+    font-size: 11px;
+    background: black;
+    color: #30b590;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position:relative;
+    right: 90px;
+    bottom: 20px;
+    border-radius: 15px 5px 5px;
+}
+#DetailTitle {
+  display: flex;
+  justify-content: center;
+}
+#DetailTitle h1 {
+  font-size: 50px;
+  background: #000000a1;
+  width: fit-content;
+  position: relative;
+  padding: 5px 40px;
+  border-radius: 25px;
+  transition:0.8s;
+}
+#DetailTitle h1:hover {
+  filter: drop-shadow(0px 10px 4px black);
+  transition:0.8s;
+}
+#DetailImg img {
+  width: 350px;
+  border-radius: 40px;
+  border: solid 15px #00000021;
+  transition: 2s;
+}
+#DetailImg img:hover {
+  border: solid 15px #0000008f;
+  border-radius: 20px;
+  transition: 0.8s;
+}
+#DetailImg {
+  display: flex;
+  margin: 0px 50px;
+  gap: 30px;
+  font-size: 25px;
+  align-items: center;
+}
+#DetailMov {
+  background: #000000d6;
+  border-radius: 20px;
+  border: 20px solid #000000;
+  text-align: justify;
+  transition: 1s;
+}
+#DetailMov:hover {
+  background: #ffffff6b;
+  border-radius: 10px;
+  border: 5px solid #000000ba;
+  text-align: justify;
+  padding: 20px;
+  color: black;
+  transition: 1s;
+}
+#DetailCard {
+  margin: 50px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#DetailCard span {
+  background: #1a2239;
+  color: white;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 10px;
+  border: #30b590 4px;
+  border-style: ridge;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  transition:0.8s;
+  filter: drop-shadow(-3px 3px 1px black);
+}
+#DetailCard span:hover{
+  transition:0.8s;
+  filter: drop-shadow(-6px 6px 1px black);
+  transform: scale(1.2);
+  position:relative;
+  z-index: 2;
+}
+#DetailCard span p {
+  margin: 2px;
+}
+#DetailCard i {
+  background: #30b590;
+  color: black;
+  border-radius: 7px;
+  padding: 1px 5px;
+  transition:0.5s;
+}
+#DetailCard i:hover {
+  transition:0.5s;
+  color: white;
+  border-radius: 10px;
+  padding: 1px 10px;
+  border:2px solid white;
+  font-weight: 700;
+  background-color: black;
+}
+#DetailActors #PersonajeImg, #DetailActors #ActorImg
+{
+  background-size: cover!important;
+  background-position: center!important;
+  width: 200px;
+  height: 300px;
+  transition:0.8s!important;
+  border-radius: 12px;
+  border: 2px solid white;
+  filter: drop-shadow(0px 0px 2px white);
+}
+#DetailActors #ActorImg {
+  position: absolute;
+  z-index: 1;
+}
+#DetailActors #PersonajeImg {
+  position: relative;
+}
+#DetailActors #ActorImg:hover{
+  transition:0.8s!important;
+  z-index: -1;
+}
+#DetailActors #PersonajeImg:hover{
+  transition:0.8s!important;
+  z-index: 2;
+}
+#DetailActors {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+  gap: 30px;
+  justify-content: center;
+}
+#SeeMore {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px;
+  padding: 20px;
+}
+#SeeMore a {
+  color: #1a2239;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 22px;
+  padding: 10px;
+  border: #1a2239 6px;
+  border-style: groove;
+  border-radius: 10px;
+  background: #30b590;
+  transition: 0.8s;
+}
+#SeeMore a:hover {
+  filter: drop-shadow(-3px 8px 3px black);
+  transition: 0.8s;
+  scale: 1.05;
+  border-color: #30b590;
+  color: white;
+  background: #1a2239;
+  border-radius: 20px;
+}
+#SeeSerie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#SeeMov {
+  background: #000000e8;
+  border-radius: 6px;
+  border: 8px solid #000000;
+  text-align: justify;
+  transition: 1s;
+  padding: 5px 15px;
+  font-weight: 600;
+}
+#SeeSerie a {
+  text-decoration: none;
+  color: white;
+  background: #1a2239;
+  border: 8px white;
+  border-style: groove;
+  padding: 10px;
+  border-radius: 15px;
+  font-weight: 900;
+  font-size: 25px;
+  letter-spacing: 5px;
+  transition:1s;
+}
+#SeeSerie a:hover {
+  scale:1.05;
+  transition:1s;
+  filter: sepia(1) drop-shadow(-5px 7px 2px black);
+}
+#CardActors {
+  background: black;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  border: groove white 5px;
+}
+#CardActors p {
+  margin: 3px 0px;
+  line-height: 1em;
+  padding: 2px;
+  background: gray;
+  font-weight: 900;
+  border-radius: 5px;
+  border: 2px solid white;
+  transition: 1s;
+  width: 196px;
+}
+#CardActors p:hover {
+  transform: scale(1.1);
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 1s;
+  background: black;
+}
+#DetailSeason {
+  display: flex;
+  align-items: center;
+  margin: 50px;
+  gap: 50px;
+}
+
+.ResumSeason {
+  opacity:0;
+  position: absolute;
+  width: 310px;
+  padding: 20px;
+  background: black;
+  margin-top: 33%;
+  border: 5px white groove;
+  border-radius: 15px;
+  box-shadow: 0px -2px 14px 1px rgba(255,255,255,0.5) inset;
+  -webkit-box-shadow: 0px -2px 14px 1px rgba(255,255,255,0.5) inset;
+  -moz-box-shadow: 0px -2px 14px 1px rgba(255,255,255,0.5) inset;
+  transition: 1s;
+}
+.ResumSeason:hover {
+  z-index: -2;
+}
+#DetailSeason img {
+  width: 350px;
+  position: relative;
+  transition:1s;
+  filter: drop-shadow(2px 4px 6px black) grayscale(1);
+  border-radius: 20px;
+  border: groove 5px goldenrod;
+}
+#DetailSeason img:hover{
+  z-index: 2;
+  transition:1s;
+  filter: drop-shadow(2px 2px 15px black) grayscale(0);
+  border-radius: 10px;
+  border: groove 7px goldenrod;
+}
+#InfoSeason{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#SeeDetailSeason {
+  position: fixed;
+  background: darkgoldenrod;
+  width: 50px;
+  height: 50px;
+  color: transparent;
+  filter: opacity(0.3);
+  transition:0.8s;
+  font-size: 0px;
+  border: groove 2px;
+  border-radius: 10px;
+  right:0;
+  z-index:2;
+}
+#SeeDetailSeason:hover {
+  transition:0.8s;
+  width: fit-content;
+  height: 35px;
+  color: white;
+  filter: opacity(1);
+  font-size: 25px;
+  margin-left:5px;
+  border-width:5px;
+}
+
